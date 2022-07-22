@@ -17,7 +17,7 @@ jobs:
           command: "randomNumber=$(curl 'https://www.random.org/integers/?num=1&min=1&max=10&col=11&format=plain&base=10')"
       - run:
           name: "Update a variable - parallelism,  in this case."
-          command: "sed 's/{parallelismVal}/$randomNumber/gi' .circleci/configtwo.yml > .circleci/newConfig.yml"
+          command: 'sed "s/{parallelismVal}/$randomNumber/gi" .circleci/configtwo.yml > .circleci/newConfig.yml'
       - run:
           command: "cat .circleci/newConfig.yml"
       - continuation/continue:
