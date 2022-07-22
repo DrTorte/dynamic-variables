@@ -9,4 +9,4 @@ An example of how to dynamically update variables using Dynamic Configuration.
 
 ## Further uses
 
-In this example, we are simply making a switch that's hardcoded in our basic .yml file. However, this value can be fully dynamic and based on anything you can determine in a given job.
+In this example, we are using a random number that we fetch to update our {paralleismVal} variable.
